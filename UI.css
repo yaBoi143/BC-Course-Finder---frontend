@@ -226,3 +226,24 @@ main {
   width: 16px;
   height: 16px;
 }
+
+.message {
+  padding: 10px 14px;
+  margin: 8px;
+  border-radius: 12px;
+  max-width: 70%;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
+
+.user {
+  background: #4f46e5;
+  color: white;
+  margin-left: auto;
+}
+
+.bot {
+  background: #e5e7eb;
+  color: black;
+  margin-right: auto;
+}

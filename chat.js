@@ -6,7 +6,9 @@ const sendBtn = document.getElementById("sendBtn");
 function addMessage(text, type) {
   const message = document.createElement("div");
   message.classList.add("message", type);
-  message.textContent = text;
+ message.innerHTML = text
+  .replace(/\n\n/g, "<br><br>")
+  .replace(/\n/g, "<br>");
 
   chatBox.appendChild(message);
   chatBox.scrollTop = chatBox.scrollHeight;
