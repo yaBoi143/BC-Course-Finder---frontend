@@ -7,7 +7,7 @@ function addMessage(text, type) {
   const message = document.createElement("div");
   message.classList.add("message", type);
  message.innerHTML = text
-  .replace(/\n\n/g, "<br><br>")
+  .replace(/\*\*(.*?)\*\*/g, "<b>$1</b>")
   .replace(/\n/g, "<br>");
 
   chatBox.appendChild(message);
