@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CyberSecurity Specialist — BC CourseFinder™</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="careerPages.css"/>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+     <div class="logo-btn">
+        <img src="https://www.belgiumcampus.ac.za/assets/img/logo.png"
+             alt="Belgium Campus Logo">
+    </div>
+    <a href="IT fields.html" class="btn-back">← Back</a>
+  </header>
+
+  <section class="hero" style="background: linear-gradient(135deg, #1e1b4b 0%, #3730a3 60%, #4f46e5 100%);">
+    <div class="hero-content">
+      <span class="hero-icon">🔒</span>
+      <h1>CyberSecurity Specialist</h1>
+      <p>Protect systems, networks and data from hackers, malware and digital threats in an ever-connected world.</p>
+      <div class="hero-tags">
+        <span class="tag">Diploma in IT · NQF 6</span>
+        <span class="tag">Infrastructure Stream</span>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="content-grid">
+
+      <div class="left-col">
+
+        <div class="section-card">
+          <h2>Career Overview</h2>
+          <p>Cybersecurity specialists protect computer systems, networks, and data from cyber threats such as hacking, malware, and data breaches. They monitor systems for suspicious activity, prevent security vulnerabilities, and help organisations keep sensitive information safe. Cybersecurity professionals are important in banks, businesses, government organisations, and technology companies.</p>
+        </div>
+
+        <div class="section-card">
+          <h2>Typical Responsibilities</h2>
+          <ul>
+            <li>Monitoring computer systems and networks for security threats</li>
+            <li>Investigating security breaches and cyber incidents</li>
+            <li>Installing and managing security software such as firewalls and antivirus tools</li>
+            <li>Testing systems to identify vulnerabilities before attackers exploit them</li>
+            <li>Educating employees about safe cybersecurity practices</li>
+          </ul>
+        </div>
+
+        <div class="section-card">
+          <h2>Belgium Campus Study Pathway</h2>
+          <p class="pathway-note">Falls under the <strong>Diploma in Information Technology (NQF 6)</strong></p>
+          <div class="year-block">
+            <div class="year-label">Year 1 — Foundation</div>
+            <div class="modules-grid">
+              <div class="module-chip">Business Communication</div>
+              <div class="module-chip">Business Management</div>
+              <div class="module-chip">Entrepreneurship &amp; Leadership</div>
+              <div class="module-chip">Internet of Things</div>
+              <div class="module-chip">Network Development</div>
+              <div class="module-chip">Computer Architecture</div>
+              <div class="module-chip">End User Computing</div>
+              <div class="module-chip">Database Concepts</div>
+              <div class="module-chip">Database Functionality</div>
+              <div class="module-chip">Mathematics</div>
+              <div class="module-chip">Statistics</div>
+              <div class="module-chip">Programming</div>
+              <div class="module-chip">Web Development</div>
+            </div>
+          </div>
+          <div class="year-block">
+            <div class="year-label">Year 2 — Infrastructure Stream</div>
+            <div class="module-list">
+              <div class="module-item"><strong>Cloud-Native Application Architecture</strong> — Allows specialists to go from manual defences to automated, embedded and dynamic security.</div>
+              <div class="module-item"><strong>Internet of Things</strong> — Enables real-time threat detection, advanced network visibility and AI-driven automated security.</div>
+              <div class="module-item"><strong>Operating Systems</strong> — Used to manage user access, enforce file permissions, isolate processes and patch vulnerabilities.</div>
+              <div class="module-item"><strong>Security</strong> — Provides tools, frameworks and data needed to protect, detect and respond to threats.</div>
+            </div>
+          </div>
+          <div class="year-block">
+            <div class="year-label">Year 3 — Specialisation</div>
+            <div class="module-list">
+              <div class="module-item"><strong>Ethical Hacking</strong> — Actively identify, analyse and patch vulnerabilities before anything malicious happens.</div>
+              <div class="module-item"><strong>Penetration Testing</strong> — Actively identify, validate and provide solutions for vulnerabilities before malicious hackers attack.</div>
+            </div>
+          </div>
+          <a href="https://www.belgiumcampus.ac.za/diploma-in-information-technology/" target="_blank" class="info-link">More info on the Diploma in IT →</a>
+        </div>
+
+      </div>
+
+      <div class="right-col">
+
+        <div class="section-card highlight-card">
+          <h2>Important Skills</h2>
+          <div class="skills-list">
+            <span class="skill-badge">🧩 Problem Solving</span>
+            <span class="skill-badge">🧠 Logical Thinking</span>
+            <span class="skill-badge">🔐 Network Security</span>
+            <span class="skill-badge">💻 Programming &amp; Scripting</span>
+            <span class="skill-badge">🔍 Attention to Detail</span>
+            <span class="skill-badge">🤝 Communication &amp; Teamwork</span>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <h2>Recommended School Subjects</h2>
+          <ul class="subjects-list">
+            <li>✅ Mathematics</li>
+            <li>✅ Physical Science</li>
+            <li>✅ Information Technology</li>
+          </ul>
+        </div>
+
+        <div class="section-card">
+          <h2>Possible Entry-Level Jobs</h2>
+          <ul>
+            <li>Junior Cybersecurity Analyst</li>
+            <li>Security Operations Centre (SOC) Analyst</li>
+            <li>IT Security Technician</li>
+            <li>Information Security Intern</li>
+          </ul>
+        </div>
+
+        <div class="section-card">
+          <h2>Related Careers</h2>
+          <div class="related-list">
+            <span class="related-link">🌐 Network Engineer</span>
+            <span class="related-link">☁️ Cloud Security Engineer</span>
+            <span class="related-link">🕵️ Digital Forensics Analyst</span>
+            <span class="related-link">🛡️ Cybersecurity Analyst</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+</body>
+</html>

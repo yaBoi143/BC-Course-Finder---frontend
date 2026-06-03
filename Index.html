@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BC CourseFinder™</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+ <header>
+  <div class="header-left">
+    <!-- BC logo -->
+    <div class="bc-logo">
+      <img src="https://www.belgiumcampus.ac.za/assets/img/logo.png"
+           alt="Belgium Campus Logo">
+    </div>
+      <div class="header-text">
+        <span class="header-title">BC CourseFinder™</span>
+        <span class="header-sub">Your IT course assistant</span>
+      </div>
+    </div>
+    <!-- Reloads the page to start fresh -->
+    <button class="btn-start-over" onclick="location.reload()">Start Over ↺</button>
+  </header>
+
+  <!-- ── CHAT AREA ── -->
+  <div class="chat-area" id="chatArea">
+
+    <!-- Bot greeting message (always shown on load) -->
+    <div class="msg-row bot-row">
+      <!-- Blue bot avatar (chatbot identity, stays blue) -->
+      <div class="bot-avatar">BC<sup>+</sup></div>
+      <div class="msg-bubble bot-bubble">
+        <div class="bot-name">BC CourseFinder</div>
+        <p>Hi! 👋 I'm your BC CourseFinder assistant.</p>
+        <p>I can help you explore IT career paths, required subjects, skills, and study options at Belgium Campus.</p>
+        <p>What would you like to know about?</p>
+        <div class="timestamp" id="greetTime"></div>
+
+        <!-- Quick-start topic buttons -->
+        <div class="quick-links">
+          <a href="careerMath.html" class="quick-btn">🖥️ Careers with Maths &amp; Science</a>
+          <a href="skillsSoftware.html" class="quick-btn">🧠 Skills for Software Development</a>
+          <a href="diplomaVSdegree.html" class="quick-btn">🎓 Diploma vs Degree</a>
+          <a href="IT fields.html" class="quick-btn">🌐 IT Fields Explained</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bot responses will be injected here by chat.js -->
+    <div id="msgList"></div>
+
+  </div>
+
+  <!-- ── INPUT BAR ── -->
+  <div class="input-bar">
+    <div class="input-inner">
+      <!-- Mic icon (placeholder — no backend yet) -->
+      <button class="mic-btn" title="Voice input (coming soon)">🎤</button>
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Type your question here..."
+        autocomplete="off"
+        onkeydown="if(event.key==='Enter') sendMessage()"
+      />
+      <!-- Send button triggers sendMessage() in chat.js -->
+      <button class="send-btn" onclick="sendMessage()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"/>
+          <polygon points="22 2 15 22 11 13 2 9 22 2" fill="#fff" stroke="none"/>
+        </svg>
+      </button>
+    </div>
+    <p class="disclaimer">🔒 BC CourseFinder can make mistakes. Please verify important information.</p>
+  </div>
+
+  <script src="chatbot.js"></script>
+</body>
+</html>
