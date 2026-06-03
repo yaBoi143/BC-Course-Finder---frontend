@@ -1,6 +1,6 @@
-const chatBox = document.getElementById("chatBox");
+const chatBox = document.getElementById("msgList");
 const input = document.getElementById("userInput");
-const sendBtn = document.getElementById("sendBtn");
+const sendBtn = document.querySelector(".send-btn");
 
 // ADD MESSAGE FUNCTION
 function addMessage(text, type) {
