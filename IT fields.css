@@ -32,8 +32,8 @@ header {
 }
 
 .logo-btn {
-  width: 44px;
-  height: 44px;
+  width: 60px;
+  height: 60px;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -70,6 +70,7 @@ header {
   text-decoration: none;
   transition: background 0.15s;
   font-family: 'Inter', sans-serif;
+  margin-left: auto;
 }
 
 .btn-back:hover {
