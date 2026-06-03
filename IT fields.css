@@ -43,9 +43,12 @@ header {
 }
 
 .logo-btn img {
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
+  max-width: 44px;
+  max-height: 44px;
   object-fit: contain;
+  display: block;
 }
 
 .header-title {
