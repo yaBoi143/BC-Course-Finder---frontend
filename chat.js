@@ -4,13 +4,26 @@ const sendBtn = document.querySelector(".send-btn");
 
 // ADD MESSAGE FUNCTION
 function addMessage(text, type) {
-  const message = document.createElement("div");
-  message.classList.add("message", type);
- message.innerHTML = text
-  .replace(/\*\*(.*?)\*\*/g, "<b>$1</b>")
-  .replace(/\n/g, "<br>");
+  const row = document.createElement("div");
+  row.classList.add("msg-row", type === "user" ? "user-row" : "bot-row");
 
-  chatBox.appendChild(message);
+  const bubble = document.createElement("div");
+  bubble.classList.add(type === "user" ? "user-bubble" : "bot-bubble");
+
+  bubble.innerHTML = text
+    .replace(/\*\*(.*?)\*\*/g, "<b>$1</b>")
+    .replace(/\n/g, "<br>");
+
+  if (type === "bot") {
+    const avatar = document.createElement("div");
+    avatar.classList.add("bot-avatar");
+    avatar.innerHTML = "BC<sup>+</sup>";
+    row.appendChild(avatar);
+  }
+
+  row.appendChild(bubble);
+  chatBox.appendChild(row);
+
   chatBox.scrollTop = chatBox.scrollHeight;
 }
 
