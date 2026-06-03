@@ -1,0 +1,1 @@
+- [x] Step 1: Add error handling and key prompt to chat.js

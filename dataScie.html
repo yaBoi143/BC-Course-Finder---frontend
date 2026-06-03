@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Data Scientist — BC CourseFinder™</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="Careers.css"/>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <div class="logo-btn"><img src="data:image/jpeg;base64,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" alt="BC Logo"/></div>
+      <span class="header-title">BC CourseFinder™</span>
+    </div>
+    <a href="index.html" class="btn-back">← Back</a>
+  </header>
+
+  <section class="hero" style="background: linear-gradient(135deg, #14532d 0%, #15803d 60%, #16a34a 100%);">
+    <div class="hero-content">
+      <span class="hero-icon">📊</span>
+      <h1>Data Scientist</h1>
+      <p>Turn raw data into powerful insights that shape business decisions and drive innovation across industries.</p>
+      <div class="hero-tags">
+        <span class="tag">Bachelor of Computing · NQF 8</span>
+        <span class="tag">Data Science Stream</span>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="content-grid">
+
+      <div class="left-col">
+
+        <div class="section-card">
+          <h2>Career Overview</h2>
+          <p>A Data Scientist analyses complex digital information to find patterns, predict trends, and support organisational decision-making. This role combines statistical analysis, computer programming, and domain expertise to transform raw data into actionable business intelligence.</p>
+        </div>
+
+        <div class="section-card">
+          <h2>Salary &amp; Job Outlook</h2>
+          <div class="stats-grid">
+            <div class="stat-box">
+              <div class="stat-label">Entry-Level</div>
+              <div class="stat-value">R350k – R600k</div>
+              <div class="stat-sub">per year</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">Experienced</div>
+              <div class="stat-value">R1.2M – R2M+</div>
+              <div class="stat-sub">per year</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">Job Growth</div>
+              <div class="stat-value">35%</div>
+              <div class="stat-sub">above national avg</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">Work Arrangements</div>
+              <div class="stat-value">Flexible</div>
+              <div class="stat-sub">remote / hybrid / on-site</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <h2>Belgium Campus Study Pathway</h2>
+          <p class="pathway-note">Falls under the <strong>Bachelor of Computing (NQF 8)</strong></p>
+          <div class="year-block">
+            <div class="year-label">Years 1–3 — Foundation</div>
+            <div class="modules-grid">
+              <div class="module-chip">Business Communication</div>
+              <div class="module-chip">Business Management</div>
+              <div class="module-chip">Entrepreneurship &amp; Leadership</div>
+              <div class="module-chip">Academic Writing</div>
+              <div class="module-chip">Research Methods</div>
+              <div class="module-chip">Information Systems</div>
+              <div class="module-chip">Project Management</div>
+              <div class="module-chip">Internet of Things</div>
+              <div class="module-chip">Network Development</div>
+              <div class="module-chip">Computer Architecture</div>
+              <div class="module-chip">Database Concepts</div>
+              <div class="module-chip">Mathematics</div>
+              <div class="module-chip">Statistics</div>
+              <div class="module-chip">Machine Learning</div>
+              <div class="module-chip">Linear Programming</div>
+              <div class="module-chip">Web Development</div>
+            </div>
+          </div>
+          <div class="year-block">
+            <div class="year-label">Data Science Stream — Specialisation</div>
+            <div class="module-list">
+              <div class="module-item"><strong>Data Warehousing</strong> — Central, clean and structured repository for historical data.</div>
+              <div class="module-item"><strong>Data Science</strong> — Tools, methodologies and frameworks to transform raw, unstructured data.</div>
+              <div class="module-item"><strong>Database Administration</strong> — Ensures data is accessible, reliable, secure and high-performing.</div>
+              <div class="module-item"><strong>Statistics</strong> — Understand data distribution, identify patterns, quantify uncertainty and make data-driven decisions.</div>
+            </div>
+          </div>
+          <div class="year-block">
+            <div class="year-label">Year 4 — Applied Year</div>
+            <div class="module-list">
+              <div class="module-item"><strong>Applied Information Technology</strong> — Uses technology to solve real-world business problems.</div>
+              <div class="module-item"><strong>Dissertation</strong> — Demonstrate technical mastery, critical thinking and ability to solve complex real-world computing problems.</div>
+            </div>
+          </div>
+          <a href="https://www.belgiumcampus.ac.za/bachelor-of-computing/" target="_blank" class="info-link">More info on the Bachelor of Computing →</a>
+        </div>
+
+        <div class="section-card">
+          <h2>Employment Sectors</h2>
+          <div class="sectors-list">
+            <div class="sector-item"><strong>🏦 Financial Services</strong> — Fraud detection, risk modelling, algorithmic trading at Standard Bank, FNB, Absa, Nedbank.</div>
+            <div class="sector-item"><strong>🛒 Retail &amp; E-commerce</strong> — Customer segmentation, demand forecasting at Shoprite, Woolworths, Takealot.</div>
+            <div class="sector-item"><strong>📡 Telecommunications</strong> — Network optimisation and churn prediction at MTN, Vodacom, Telkom.</div>
+            <div class="sector-item"><strong>📋 Consulting</strong> — Cross-industry projects at Accenture, Deloitte and local boutique firms.</div>
+            <div class="sector-item"><strong>🚀 Tech Startups</strong> — Product analytics at Cape Town and Johannesburg tech hubs.</div>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq-list">
+            <div class="faq-item">
+              <div class="faq-q">What's the difference between a Data Scientist and a Data Analyst?</div>
+              <div class="faq-a">Data Analysts examine historical data to describe past performance. Data Scientists use predictive modelling and machine learning to forecast future outcomes, requiring deeper programming and statistical expertise.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Is advanced mathematics necessary?</div>
+              <div class="faq-a">Statistical literacy is essential, but advanced calculus is handled through computational tools. Logical reasoning and problem-solving are more critical than manual computation.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">How does AI impact data science careers?</div>
+              <div class="faq-a">AI and AutoML tools enhance productivity but don't replace human judgment in problem formulation, data quality assessment, ethics review and interpretation. The field continues evolving toward higher-level analytical strategy.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Are SA qualifications recognised internationally?</div>
+              <div class="faq-a">South African degrees from accredited universities are well-regarded, particularly within Commonwealth countries. International mobility may require credential evaluation depending on the destination country.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="right-col">
+
+        <div class="section-card highlight-card">
+          <h2>Technical Skills</h2>
+          <div class="skills-list">
+            <span class="skill-badge">🐍 Python / R</span>
+            <span class="skill-badge">🗄️ SQL &amp; Databases</span>
+            <span class="skill-badge">📈 Statistical Analysis</span>
+            <span class="skill-badge">🤖 Machine Learning</span>
+            <span class="skill-badge">📊 Data Visualisation</span>
+            <span class="skill-badge">⚡ Tableau / Power BI</span>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <h2>Professional Skills</h2>
+          <div class="skills-list">
+            <span class="skill-badge teal">💬 Communication</span>
+            <span class="skill-badge teal">🧠 Critical Thinking</span>
+            <span class="skill-badge teal">🏭 Domain Knowledge</span>
+            <span class="skill-badge teal">⚖️ Data Ethics (POPIA)</span>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <h2>Recommended School Subjects</h2>
+          <ul class="subjects-list">
+            <li>✅ Mathematics</li>
+            <li>✅ Physical Science</li>
+            <li>✅ Information Technology</li>
+          </ul>
+        </div>
+
+        <div class="section-card">
+          <h2>Alternative Pathways</h2>
+          <div class="alt-list">
+            <div class="alt-item"><strong>Bootcamps (6–12 months)</strong><br/>HyperionDev, Explore Data Science Academy, CodeSpace — ideal for career changers.</div>
+            <div class="alt-item"><strong>Online Certifications</strong><br/>Google Data Analytics, AWS Machine Learning, Microsoft Azure — self-paced over 12–18 months.</div>
+            <div class="alt-item"><strong>Portfolio Building</strong><br/>3–4 projects on GitHub showing data cleaning, EDA, modelling and visualisation.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+</body>
+</html>
